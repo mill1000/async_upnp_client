@@ -1,3 +1,18 @@
+async_upnp_client 0.38.3 (2024-03-29)
+=====================================
+
+Features
+--------
+
+- Try discarding namespaces when in non-strict mode to improve handling of broken devices (#224)
+
+
+Misc
+----
+
+- #220
+
+
 async_upnp_client 0.38.2 (2024-02-12)
 =====================================
 
