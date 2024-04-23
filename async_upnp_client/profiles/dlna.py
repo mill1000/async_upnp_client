@@ -1137,6 +1137,16 @@ class DmrDevice(ConnectionManagerMixin, UpnpProfileDevice):
     def media_album_artist(self) -> Optional[str]:
         """Album artist of current playing media."""
         return self._get_current_track_meta_data("album_artist")
+    
+    @property
+    def media_original_track_number(self) -> Optional[int]:
+        """The original track number on an album of current playing media."""
+        return self._get_current_track_meta_data("original_track_number")
+
+    @property
+    def media_date(self) -> Optional[int]:
+        """The primary date of current playing media."""
+        return self._get_current_track_meta_data("date")
 
     @property
     def media_track_number(self) -> Optional[int]:
